@@ -119,7 +119,8 @@ button:hover {
 }
 
 .task-item.completed {
-  background: #d4edda;
+  background: #e6ffed; 
+  border-left: 4px solid #28a745;
 }
 
 .task-content {
@@ -212,7 +213,8 @@ button:hover {
 }
 
 .container.dark .task-item.completed {
-  background: #366936;
+  background: #295d29; 
+  border-left: 4px solid #4caf50;
 }
 
 .container.dark .task-filter button {

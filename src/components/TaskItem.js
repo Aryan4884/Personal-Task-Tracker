@@ -31,9 +31,7 @@ export default function TaskItem({ task, updateTask, deleteTask }) {
   };
 
   return (
-    <div className="task-item">
-      
-
+    <div className={`task-item ${task.completed ? 'completed' : ''}`}>
       {isEditing ? (
         <>
           <div className="task-content">
@@ -77,10 +75,10 @@ export default function TaskItem({ task, updateTask, deleteTask }) {
       ) : (
         <>
           <input
-        type="checkbox"
-        checked={task.completed}
-        onChange={toggleComplete}
-      />
+            type="checkbox"
+            checked={task.completed}
+            onChange={toggleComplete}
+          />
           <div className={`task-content ${task.completed ? 'completed' : ''}`}>
             <h3>{task.title}</h3>
             <p>{task.description}</p>
