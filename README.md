@@ -59,13 +59,15 @@ npm start
 4️⃣ Open http://localhost:3000 in your browser.
 
 ---
-🧰 Technologies Used
+## 🧰 Technologies Used
+
 - React.js (with hooks)
 - CSS Flexbox + Media Queries for responsiveness
 - LocalStorage for persistence
+  
 ---
 
-🔗 Live Demo
+## 🔗 Live Demo
 👉 Check the live version here:- [LINK](https://personal-task-tracker01.netlify.app)
 
 ## 🖼 Screenshots
