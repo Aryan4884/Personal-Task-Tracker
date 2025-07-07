@@ -70,14 +70,9 @@ npm start
 
 ## 🖼 Screenshots
 
-### ✅ Light Mode — Example 1
-![Task Tracker Light Mode 1](IMG1.png)
-
-### ✅ Light Mode — Example 2
-![Task Tracker Light Mode 2](IMG2.png)
-
-### ✅ Dark Mode
-![Task Tracker Dark Mode](IMG3.png)
+![Task Tracker Light Mode 1](screenshots/IMG1.png)
+![Task Tracker Light Mode 2](screenshots/IMG2.png)
+![Task Tracker Dark Mode](screenshots/IMG3.png)
 
 📜 License
 This project is for educational/demo use.
