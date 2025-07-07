@@ -66,7 +66,7 @@ npm start
 ---
 
 🔗 Live Demo
-👉 Check the live version here:- LINK(https://personal-task-tracker01.netlify.app)
+👉 Check the live version here:- [LINK](https://personal-task-tracker01.netlify.app)
 
 ## 🖼 Screenshots
 
@@ -75,5 +75,5 @@ npm start
 ![Task Tracker Dark Mode](screenshots/IMG3.png)
 
 📜 License
-This project is for educational/demo use.
-Developed by Aryan Raj [July, 2025]
+- This project is for educational/demo use.
+- Developed by Aryan Raj [July, 2025]
