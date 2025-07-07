@@ -43,7 +43,7 @@ This is a responsive React task tracker app that lets you:
 
 ```bash
 git clone https://github.com/Aryan4884/Personal-Task-Tracker.git
-cd task-tracker
+cd Personal-Task-Tracker
 ```
 
 2️⃣ Install dependencies
