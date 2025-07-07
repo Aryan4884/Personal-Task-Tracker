@@ -1,0 +1,265 @@
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: inherit;
+}
+
+.login, .task-form, .task-list, .task-filter {
+  margin: 1.5rem 0;
+}
+
+.login {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.task-form input[type="text"],
+.task-form input[type="date"],
+.task-form select {
+  width: calc(50% - 0.5rem);
+  display: inline-block;
+}
+
+.task-form input[type="text"]:first-child {
+  margin-right: 1rem;
+}
+
+.task-form input[type="date"] {
+  margin-left: 1rem;
+}
+
+.task-form button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-task-btn {
+  margin-left: 1rem;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.task-filter button {
+  background: #e0e0e0;
+  color: #333;
+  margin: 0.2rem;
+}
+
+.task-filter button.active {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.task-filter button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  background: #fafafa;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.task-item input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.task-item.completed {
+  background: #d4edda;
+}
+
+.task-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.task-content.completed {
+  text-decoration: line-through;
+}
+
+.task-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.task-content p {
+  margin: 0;
+  color: #555;
+}
+
+.task-content small {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.task-item button {
+  background: #6c757d;
+}
+
+.task-item button:hover {
+  background: #495057;
+}
+
+.task-item button:first-of-type {
+  background: #ffc107;
+  color: #333;
+}
+
+.task-item button:first-of-type:hover {
+  background: #e0a800;
+}
+
+.login input {
+  max-width: 300px;
+}
+
+.login button {
+  margin-top: 1rem;
+}
+
+/* Dark mode */
+.container.dark {
+  background: #222;
+  color: #eee;
+}
+
+.container.dark h1,
+.container.dark h2 {
+  color: #eee;
+}
+
+.container.dark input,
+.container.dark select {
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+.container.dark button {
+  background: #444;
+  color: #eee;
+}
+
+.container.dark button:hover {
+  background: #666;
+}
+
+.container.dark .task-item {
+  background: #333;
+  border: 1px solid #555;
+}
+
+.container.dark .task-item.completed {
+  background: #366936;
+}
+
+.container.dark .task-filter button {
+  background: #444;
+  color: #eee;
+}
+
+.container.dark .task-filter button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.container.dark .task-filter button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.container.dark .task-content p {
+  color: #ccc;
+}
+
+.container.dark .task-content small {
+  color: #bbb;
+}
+
+
+@media (max-width: 600px) {
+  .task-form input[type="text"],
+  .task-form input[type="date"],
+  .task-form select {
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+
+  .add-task-btn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
